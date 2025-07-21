@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MIT Mocha Moves</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+
+  <body>
+    <div class="decor"></div>
+    <div class="menu" id="menu">
+      <div class="overlay menu-overlay">
+        <div class="menu-close">x</div>
+        <nav>
+          <ul class="navLinks">
+            <li class="navLink"><a class="navText"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="ham-container">
+      <div class="ham">
+        <div class="ham-line"></div>
+        <div class="ham-line"></div>
+        <div class="ham-line"></div>
+      </div>
+    </div>
+
+    <section class="photo-header">
+      <div class="row photo-header-container">
+        <img class="photo-header-img roll" src="img/logo.png" alt="" />
+        <h1 class="photo-header-text"></h1>
+      </div>
+      <a href="#intro" class="scroll-down" id="scrollArrow">&#x2193;</a>
+      <div class="overlay overlay-primary"></div>
+    </section>
+
+    <section class="intro-section" id="intro">
+      <div class="intro-image-wrapper">
+        <img src="img/home-intro.jpeg" alt="Mocha Moves Intro" />
+      </div>
+      <div class="intro-overlay"></div>
+      <div class="row intro-content">
+        <div class="small-12 columns intro-textbox">
+          <p class="intro-text">
+            Established in 1999, Mocha Moves is an MIT-based dance team whose
+            mission is to be a creative outlet for members to develop their
+            skills. We share our talent and passion for dance through hosting
+            performances, such as Ring the Alarm and Mocha Show, and
+            participating in many others hosted throughout the Greater Boston
+            Area. We strive to learn and grow together by cultivating our
+            talents and connections with the Boston dance community. On Mocha,
+            the grind never stops!
+          </p>
+          <p class="intro-text">
+            Check us out. See what we’re up to. Join the MoFamily.
+          </p>
+          <a href="members.html" class="button">MEET THE TEAM</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroll-banner">
+      <div class="scroll-text">
+        <span
+          >COME WATCH US DANCE • COME WATCH US DANCE • COME WATCH US DANCE •
+        </span>
+      </div>
+    </section>
+
+    <section class="dance-shows clearfix">
+      <div class="small-12 large-6 columns dance-show dance-show-left">
+        <h2>Ring the Alarm</h2>
+        <a class="overlay overlay-primary" href="shows.html"></a>
+      </div>
+      <div class="small-12 large-6 columns dance-show dance-show-right">
+        <h2>Mocha Show</h2>
+        <a class="overlay overlay-primary" href="shows.html"></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top row clearfix">
+        <div
+          class="footer-text small-11 small-offset-1 medium-6 medium-offset-2 columns"
+        >
+          <h5 class="subheader">Follow Us</h5>
+          <ul class="socialLinks no-bullet">
+            <li class="socialLink"><a class="socialText"></a></li>
+          </ul>
+          <h5 class="subheader">Contact Us</h5>
+          <p>mocaptains@mit.edu</p>
+        </div>
+        <div class="footer-text small-11 medium-4 columns">
+          <nav>
+            <h5 class="subheader">Site Navigation</h5>
+            <ul class="navLinks no-bullet" role="navigation">
+              <li class="navLink"><a class="navText"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom clearfix text-center">
+        <div class="footer-text small-12 columns">
+          <p>&copy; MIT Mocha Moves 2020</p>
+          <p>
+            Photos by
+            <a href="https://www.facebook.com/JosephLeePhotography"
+              >Joseph Lee Photography</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/transparency.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      let typedInstance = null;
+
+      function startTyping() {
+        const textEl = document.querySelector(".photo-header-text");
+        textEl.textContent = "";
+        textEl.style.opacity = 1; // Reset opacity
+        textEl.classList.remove("fade-out");
+
+        if (typedInstance) {
+          typedInstance.destroy(); // Clean up previous instance
+        }
+
+        typedInstance = new Typed(".photo-header-text", {
+          strings: ["MoFamily. MoLuv."],
+          typeSpeed: 100,
+          startDelay: 3000,
+          showCursor: false,
+          onComplete: () => {
+            // After typing completes, fade out after 1 second delay
+            setTimeout(() => {
+              textEl.classList.add("fade-out");
+            }, 1000);
+          },
+        });
+      }
+
+      function showScrollArrow() {
+        const arrow = document.getElementById("scrollArrow");
+        arrow.style.opacity = 1;
+        arrow.style.pointerEvents = "auto"; // Optional: allows click if it's a link
+      }
+
+      // Call after logo roll ends (assuming 3s roll + 3s delay)
+      setTimeout(showScrollArrow, 8000);
+
+      $(function () {
+        startTyping(); // Run once immediately
+        setInterval(startTyping, 10000); // Repeat every 10 seconds
+      });
+    </script>
+  </body>
+</html>
