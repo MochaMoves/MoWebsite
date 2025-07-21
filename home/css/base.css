@@ -719,6 +719,50 @@ h6 {
   /* background: url('../img/shows-subheader.jpg') no-repeat center 35%/100%; */
 }
 
+body.shows {
+    background-color: #000;
+    color: #fff;
+}
+
+.timeline {
+    border-left: 3px solid #fff;
+    margin: 2rem 0;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.2rem;
+    top: 0;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #aaa;
+    margin-bottom: 0.3rem;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.timeline-content p {
+    margin: 0.5rem 0 0;
+    color: #ccc;
+}
+
 /* === CONTACT === */
 .contact-text {
   margin: 7em 0;
