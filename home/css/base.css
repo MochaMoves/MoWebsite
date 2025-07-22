@@ -511,6 +511,10 @@ h6 {
   background-size: cover;
 }
 
+.shows .page-title{
+  color:rgb(209, 60, 255);
+}
+
 /* === ABOUT === */
 .about {
   position: relative;
@@ -525,6 +529,10 @@ h6 {
   background-position: 50% 70%;
   background-size: length;
   /* background: url('../img/team-group.jpg') no-repeat center 20%;  */
+}
+
+.about-page .ham-line {
+  background-color: #661f75;
 }
 
 /* === MEMBERS === */
@@ -719,7 +727,7 @@ h6 {
   /* background: url('../img/shows-subheader.jpg') no-repeat center 35%/100%; */
 }
 
-body.shows {
+.shows {
     background-color: #000;
     color: #fff;
 }
@@ -749,8 +757,12 @@ body.shows {
 
 .timeline-date {
     font-weight: bold;
-    color: #aaa;
+    color: #e7e7e7;
     margin-bottom: 0.3rem;
+}
+
+.timeline h3{
+  color: #ffffff
 }
 
 .timeline-content h3 {
@@ -760,8 +772,44 @@ body.shows {
 
 .timeline-content p {
     margin: 0.5rem 0 0;
-    color: #ccc;
+    color: #c2c2c2;
 }
+
+.show-gallery-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 0rem;
+  border-top: 0px solid #eee;
+  padding-top: 0rem;
+}
+
+.show-gallery {
+  display: flex;
+  gap: 0rem;
+  animation: scroll-left 120s linear infinite;
+  width: max-content;
+}
+
+.show-gallery img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0px;
+  transition: transform 0.3s ease;
+}
+
+.show-gallery img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 /* === CONTACT === */
 .contact-text {
