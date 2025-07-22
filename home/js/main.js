@@ -106,7 +106,7 @@ $(document).ready(function(){
     {
         member: {
             src: 'img/members/2025-2026/bridgit.jpg',
-            firstName: "Bridgit",
+            firstName: "Bridget",
             lastName: 'Li',
             class: "Class of 2027",
             position: "Secretary"
