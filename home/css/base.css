@@ -819,6 +819,11 @@ h6 {
   margin: 2em 0;
 }
 
+.contact-page .ham-line {
+  background-color: #661f75;
+}
+
+
 /* === FOOTER === */
 .footer {
     border-top: 1px solid #ffffff;
