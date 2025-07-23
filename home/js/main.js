@@ -105,6 +105,15 @@ $(document).ready(function(){
     },
     {
         member: {
+            src: 'img/members/2025-2026/amber.jpg',
+            firstName: "Amber",
+            lastName: 'Luo',
+            class: "Class of 2026",
+            position: ""
+        }
+    },
+    {
+        member: {
             src: 'img/members/2025-2026/bridgit.jpg',
             firstName: "Bridget",
             lastName: 'Li',
@@ -127,6 +136,24 @@ $(document).ready(function(){
             firstName: "Devin",
             lastName: 'Baynes',
             class: "Class of 2026",
+            position: ''
+        }
+    },
+    {
+        member: {
+            src: 'img/members/2025-2026/no-photo.jpg',
+            firstName: "Emily",
+            lastName: 'Bautista',
+            class: "Class of 2026",
+            position: ''
+        }
+    },
+    {
+        member: {
+            src: 'img/members/2025-2026/no-photo.jpg',
+            firstName: "Ethan",
+            lastName: 'Liu',
+            class: "Class of 2028",
             position: ''
         }
     },
