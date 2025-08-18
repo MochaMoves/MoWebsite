@@ -141,22 +141,22 @@ $(document).ready(function(){
     },
     {
         member: {
-            src: 'img/members/2025-2026/no-photo.jpg',
+            src: 'img/members/2025-2026/emily.jpg',
             firstName: "Emily",
             lastName: 'Bautista',
             class: "Class of 2026",
             position: ''
         }
     },
-    {
-        member: {
-            src: 'img/members/2025-2026/no-photo.jpg',
-            firstName: "Ethan",
-            lastName: 'Liu',
-            class: "Class of 2028",
-            position: ''
-        }
-    },
+    // {
+    //     member: {
+    //         src: 'img/members/2025-2026/no-photo.jpg',
+    //         firstName: "Ethan",
+    //         lastName: 'Liu',
+    //         class: "Class of 2028",
+    //         position: ''
+    //     }
+    // },
     {
         member: {
             src: 'img/members/2025-2026/jocelyn.jpg',
