@@ -1,10 +1,11 @@
 /* === GENERAL STYLING === */
 html,
 body {
-  background: #ffffff;
+  background: #000000;
   font-family: "Poppins", "Arial", sans-serif !important;
   margin: 0;
   padding: 0;
+  color: rgb(214, 214, 214)
 }
 
 p a {
@@ -21,6 +22,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+  color: white;
 }
 .subheader {
   font-weight: 600;
@@ -35,7 +37,7 @@ h6 {
 .page-title {
   font-size: 3.5rem;
   text-align: center;
-  color: #671986;
+  color: #b25dd4;
   margin-top: 5rem;
   margin-bottom: 2rem;
   position: relative;
@@ -140,7 +142,7 @@ h6 {
 }
 
 .ham-line {
-  background-color: #ffffff;
+  background-color: white;
   height: 4px;
   margin-bottom: 3px;
   width: 23px;
@@ -497,6 +499,10 @@ h6 {
   filter: alpha(opacity=30);
 }
 
+.shows .ham-line {
+  background-color: #b25dd4;
+}
+
 .dance-show:hover > .overlay {
   opacity: 0.7;
   filter: alpha(opacity=70);
@@ -532,7 +538,7 @@ h6 {
 }
 
 .about-page .ham-line {
-  background-color: #661f75;
+  background-color: #b25dd4;
 }
 
 /* === MEMBERS === */
@@ -667,7 +673,7 @@ h6 {
 }
 
 .members-page .ham-line {
-  background-color: #661f75;
+  background-color: #b25dd4;
 }
 
 /* === MEDIA === */
@@ -679,7 +685,7 @@ h6 {
 }
 
 .media-page .ham-line {
-  background-color: #661f75;
+  background-color: #b25dd4;
 }
 
 .videos {
@@ -820,30 +826,72 @@ h6 {
 }
 
 .contact-page .ham-line {
-  background-color: #661f75;
+  background-color: #b25dd4;
 }
+
+.contact-page .subheader {
+  color: #ffffff;
+}
+
+.small-12.show-for-medium-up.medium-8.columns {
+    margin-top: 30px;  /* adds space above the logo */
+}
+
+.contact a {
+    color: #b25dd4;
+}
+
+.logo-circle {
+    background: white;
+    border-radius: 50%;
+    width: 650px;       /* fixed width */
+    height: 650px;      /* fixed height equal to width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;   /* prevent overflow if image is bigger */
+}
+
+.logo-circle img.contact-img {
+    max-width: 99%;     /* scales the image nicely inside the circle */
+    height: auto;
+    display: block;
+}
+
 
 
 /* === FOOTER === */
 .footer {
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid #000000;
     width: 100%;
 }
 
 .footer-top {
-    background: #ffffff;
+    background: #000000;
     padding: 1.5em 0;
 }
 
 .footer-top .footer-text {
-    color: #222;
+    color: #dc89f3;
     text-align: left;
 }
 
-.footer-bottom { background-color: #222; }
-.footer-bottom .footer-text { color: #fffcfc; }
+.footer .footer-text .subheader {
+    color: white;
+}
+
+.footer .footer-text .socialLinks a {
+    color: #dc89f3;
+}
+
+.footer .footer-text .navLinks a {
+    color: #dc89f3;
+}
+
+.footer-bottom { background-color: #000000; }
+.footer-bottom .footer-text { color: #ffffff; }
 .footer-text {
-    color: #222;
+    color: #ffffff;
     padding: 1em 0;
     text-align: center;
 }
@@ -893,5 +941,5 @@ h6 {
 
 .outline {
     -webkit-text-stroke: 2px #222;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
