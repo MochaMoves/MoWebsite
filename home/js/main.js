@@ -114,6 +114,15 @@ $(document).ready(function(){
     },
     {
         member: {
+            src: 'img/members/2025-2026/anna.jpg',
+            firstName: "Anna",
+            lastName: 'Zavadski',
+            class: "Class of 2029",
+            position: ''
+        }
+    },
+    {
+        member: {
             src: 'img/members/2025-2026/bridgit.jpg',
             firstName: "Bridget",
             lastName: 'Li',
@@ -148,6 +157,15 @@ $(document).ready(function(){
             position: ''
         }
     },
+    {
+        member: {
+            src: 'img/members/2025-2026/emma.jpg',
+            firstName: "Emma",
+            lastName: 'Tao',
+            class: "Class of 2029",
+            position: ''
+        }
+    },
     // {
     //     member: {
     //         src: 'img/members/2025-2026/no-photo.jpg',
@@ -157,6 +175,15 @@ $(document).ready(function(){
     //         position: ''
     //     }
     // },
+    {
+        member: {
+            src: 'img/members/2025-2026/jina.jpg',
+            firstName: "Jina",
+            lastName: 'Koh',
+            class: "Class of 2027",
+            position: ''
+        }
+    },
     {
         member: {
             src: 'img/members/2025-2026/jocelyn.jpg',
@@ -175,7 +202,15 @@ $(document).ready(function(){
             position: "Show Coordinator"
         }
     },
-
+    {
+        member: {
+            src: 'img/members/2025-2026/joyce.jpg',
+            firstName: "Joyce",
+            lastName: 'Liu',
+            class: "Class of 2029",
+            position: ''
+        }
+    },
     {
         member: {
             src: 'img/members/2025-2026/kira.jpg',
@@ -185,7 +220,15 @@ $(document).ready(function(){
             position: "President"
         }
     },
-
+    {
+        member: {
+            src: 'img/members/2025-2026/lindsey.jpg',
+            firstName: "Lindsey",
+            lastName: 'Lu',
+            class: "Class of 2029",
+            position: ''
+        }
+    },
     {
         member: {
             src: 'img/members/2025-2026/nannette.jpg',
@@ -195,7 +238,6 @@ $(document).ready(function(){
             position: 'President'
         }
     },
-
     {
         member: {
             src: 'img/members/2025-2026/sophia.jpg',
@@ -204,7 +246,8 @@ $(document).ready(function(){
             class: "Class of 2028",
             position: 'Treasurer'
         }
-    }]
+    },
+]
 
     var memberDirectives = {
         member: {
