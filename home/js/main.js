@@ -189,7 +189,7 @@ $(document).ready(function(){
             src: 'img/members/2025-2026/jocelyn.jpg',
             firstName: "Jocelyn",
             lastName: 'Paek',
-            class: "class of 2028",
+            class: "Class of 2028",
             position: "Publicity Chair"
         }
     },
