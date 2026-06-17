@@ -171,7 +171,7 @@ $(document).ready(function(){
     var membersActive = [
     {
         member: {
-            src: 'img/members/actives/no-photo.jpg',
+            src: 'img/members/actives/connie.jpg',
             firstName: "Connie",
             lastName: 'Guo',
             class: "Class of 2028",
@@ -314,6 +314,42 @@ $(document).ready(function(){
             lastName: 'Le',
             class: "Class of 2022",
             position: ''
+        }
+    },
+    {
+        member: {
+            src: 'img/members/alum/haris.jpg',
+            firstName: "Haris",
+            lastName: 'Imamovic',
+            class: "Class of 2026",
+            position: ''
+        }
+    },
+    {
+        member: {
+            src: 'img/members/alum/grace.jpg',
+            firstName: "Grace",
+            lastName: 'Jau',
+            class: "Class of 2025",
+            position: ''
+        }
+    },
+    {
+        member: {
+            src: 'img/members/alum/joanna.jpg',
+            firstName: "Joanna",
+            lastName: 'Chen',
+            class: "Class of 2025",
+            position: 'President (2024-2025), Show Coordinator (2023-2024), Pub Chair (2022-2023)'
+        }
+    },
+    {
+        member: {
+            src: 'img/members/alum/annlin.jpg',
+            firstName: "Annlin",
+            lastName: 'Su',
+            class: "Class of 2024",
+            position: 'President (2023-2024), Secretary (2022-2023)'
         }
     },
     ]
